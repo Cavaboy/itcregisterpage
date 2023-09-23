@@ -117,7 +117,7 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 20),
             child: Text(
-              'Email',
+              'Password',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
@@ -147,7 +147,7 @@ class HomePage extends StatelessWidget {
                 filled: true,
                 fillColor: Color(0xffF8FFF8),
                 contentPadding: EdgeInsets.only(left: 15),
-                 hintText: 'Your e-mail address',
+                 hintText: 'Type your password',
                 border: UnderlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                   borderSide: BorderSide.none
@@ -155,48 +155,6 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 20),
-            child: Text(
-              'Email',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                color: Color(0xff1E3020)
-              ),
-            ),
-          ),
-          SizedBox(height: 5,),
-          Container(
-            margin: EdgeInsets.only(left: 20, right: 30),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(.1),
-                  blurRadius: 15,
-                  spreadRadius: 0
-                )
-              ]
-            ),
-            child: TextField(
-              style: TextStyle(
-                color: Color(0xff1E3020),
-                fontWeight: FontWeight.w500,
-              ),
-              cursorColor: Color(0xff1E3020),
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Color(0xffF8FFF8),
-                contentPadding: EdgeInsets.only(left: 15),
-                 hintText: 'Your e-mail address',
-                border: UnderlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide.none
-                )
-              ),
-            ),
-          ),
-
         ],
       )
     );
