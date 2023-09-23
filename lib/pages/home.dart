@@ -6,8 +6,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffD0E7D2),
-      body: Column(
+        backgroundColor: Color(0xffD0E7D2),
+        body: ThePage());
+  }
+
+  Column ThePage() {
+    return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
@@ -15,10 +19,9 @@ class HomePage extends StatelessWidget {
             child: Text(
               'Create Account',
               style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.w800,
-                color: Color(0xff1E3020)
-              ),
+                  fontSize: 28,
+                  fontWeight: FontWeight.w800,
+                  color: Color(0xff1E3020)),
             ),
           ),
           Padding(
@@ -26,10 +29,9 @@ class HomePage extends StatelessWidget {
             child: Text(
               'Please enter the information below',
               style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: Color(0xff1E3020)
-              ),
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xff1E3020)),
             ),
           ),
           Padding(
@@ -37,24 +39,22 @@ class HomePage extends StatelessWidget {
             child: Text(
               'Full Name',
               style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                color: Color(0xff1E3020)
-              ),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff1E3020)),
             ),
           ),
-          SizedBox(height: 5,),
+          SizedBox(
+            height: 5,
+          ),
           Container(
             margin: EdgeInsets.only(left: 20, right: 30),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
                   color: Colors.black.withOpacity(.1),
                   blurRadius: 15,
-                  spreadRadius: 0
-                )
-              ]
-            ),
+                  spreadRadius: 0)
+            ]),
             child: TextField(
               style: TextStyle(
                 color: Color(0xff1E3020),
@@ -62,15 +62,13 @@ class HomePage extends StatelessWidget {
               ),
               cursorColor: Color(0xff1E3020),
               decoration: InputDecoration(
-                filled: true,
-                fillColor: Color(0xffF8FFF8),
-                contentPadding: EdgeInsets.only(left: 15),
-                hintText: 'Enter your name',
-                border: UnderlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide.none
-                )
-              ),
+                  filled: true,
+                  fillColor: Color(0xffF8FFF8),
+                  contentPadding: EdgeInsets.only(left: 15),
+                  hintText: 'Enter your name',
+                  border: UnderlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: BorderSide.none)),
             ),
           ),
           Padding(
@@ -78,24 +76,22 @@ class HomePage extends StatelessWidget {
             child: Text(
               'Email',
               style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                color: Color(0xff1E3020)
-              ),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff1E3020)),
             ),
           ),
-          SizedBox(height: 5,),
+          SizedBox(
+            height: 5,
+          ),
           Container(
             margin: EdgeInsets.only(left: 20, right: 30),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
                   color: Colors.black.withOpacity(.1),
                   blurRadius: 15,
-                  spreadRadius: 0
-                )
-              ]
-            ),
+                  spreadRadius: 0)
+            ]),
             child: TextField(
               style: TextStyle(
                 color: Color(0xff1E3020),
@@ -103,15 +99,13 @@ class HomePage extends StatelessWidget {
               ),
               cursorColor: Color(0xff1E3020),
               decoration: InputDecoration(
-                filled: true,
-                fillColor: Color(0xffF8FFF8),
-                contentPadding: EdgeInsets.only(left: 15),
-                 hintText: 'Your e-mail address',
-                border: UnderlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide.none
-                )
-              ),
+                  filled: true,
+                  fillColor: Color(0xffF8FFF8),
+                  contentPadding: EdgeInsets.only(left: 15),
+                  hintText: 'Your e-mail address',
+                  border: UnderlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: BorderSide.none)),
             ),
           ),
           Padding(
@@ -119,24 +113,22 @@ class HomePage extends StatelessWidget {
             child: Text(
               'Password',
               style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                color: Color(0xff1E3020)
-              ),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff1E3020)),
             ),
           ),
-          SizedBox(height: 5,),
+          SizedBox(
+            height: 5,
+          ),
           Container(
             margin: EdgeInsets.only(left: 20, right: 30),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
                   color: Colors.black.withOpacity(.1),
                   blurRadius: 15,
-                  spreadRadius: 0
-                )
-              ]
-            ),
+                  spreadRadius: 0)
+            ]),
             child: TextField(
               style: TextStyle(
                 color: Color(0xff1E3020),
@@ -147,17 +139,65 @@ class HomePage extends StatelessWidget {
                 filled: true,
                 fillColor: Color(0xffF8FFF8),
                 contentPadding: EdgeInsets.only(left: 15),
-                 hintText: 'Type your password',
+                hintText: 'Type your password',
                 border: UnderlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide.none
-                )
+                  borderSide: BorderSide.none,
+                ),
               ),
+              obscureText: true,
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, top: 20),
+            child: Text(
+              'Confirm Password',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff1E3020)),
+            ),
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 20, right: 30),
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
+                  color: Colors.black.withOpacity(.1),
+                  blurRadius: 15,
+                  spreadRadius: 0)
+            ]),
+            child: TextField(
+              style: TextStyle(
+                color: Color(0xff1E3020),
+                fontWeight: FontWeight.w500,
+              ),
+              cursorColor: Color(0xff1E3020),
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Color(0xffF8FFF8),
+                contentPadding: EdgeInsets.only(left: 15),
+                hintText: 'Re-type your password',
+                border: UnderlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  borderSide: BorderSide.none,
+                ),
+              ),
+              obscureText: true,
+            ),
+          ),
+          SizedBox(height: 20,),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {}, 
+              child: Padding(
+                padding: const EdgeInsets.only(left: 80, right: 80),
+                child: Text('Submit'),
+              )),
+          )
         ],
-      )
-    );
+      );
   }
-
 }
